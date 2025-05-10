@@ -1,0 +1,25 @@
+{
+  "name": "Python",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "--name", "python-devcontainer"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "installOhMyZshConfig": true,
+      "configureZshAsDefaultShell": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
